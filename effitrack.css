@@ -1,0 +1,78 @@
+.demo-section {
+    width: 100%; /* Ensures full width */
+    padding: 50px;
+    background-color: #f9f9f9;
+    box-sizing: border-box; /* Ensures padding is included in the width */
+    margin: 0; /* Remove any default margins */
+    text-align: center;
+}
+
+.demo-section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.upload-section,
+.analysis-section,
+.result-section,
+.download-section {
+    margin: 30px 0;
+}
+
+input[type="file"] {
+    padding: 10px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 20px;
+    background-color: #ddd;
+    margin-top: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.progress-bar-fill {
+    width: 0;
+    height: 100%;
+    background-color: #4caf50;
+    animation: loadProgress 3s forwards;
+}
+
+@keyframes loadProgress {
+    to {
+        width: 100%;
+    }
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #4caf50;
+    color: white;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
